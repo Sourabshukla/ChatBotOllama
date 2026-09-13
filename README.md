@@ -1,16 +1,56 @@
-# React + Vite
+# AI Chatbot - .NET, React & Ollama
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A local AI chatbot application built using:
 
-Currently, two official plugins are available:
+- .NET Web API
+- React
+- Ollama
+- Llama 3.2 3B
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application uses Ollama to run the Llama 3.2 3B model locally and provides a .NET API that the React frontend communicates with.
 
-## React Compiler
+## Architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application follows this flow:
 
-## Expanding the ESLint configuration
+React Frontend
+        |
+        | HTTP POST
+        v
+.NET Web API
+        |
+        | HTTP Request
+        v
+Ollama
+        |
+        v
+Llama 3.2 3B
+        |
+        v
+.NET Web API
+        |
+        v
+React Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Prerequisites
+
+Before running the application, install the following:
+
+- .NET SDK
+- Node.js and npm
+- Ollama
+- Git
+
+Make sure all of them are available from PowerShell/Command Prompt.
+
+You can verify them using:
+
+```powershell
+dotnet --version
+node --version
+npm --version
+git --version
+ollama --version
+
+<img width="1053" height="911" alt="image" src="https://github.com/user-attachments/assets/7652de4c-0d5f-41e5-b860-7bd9d088530a" />
