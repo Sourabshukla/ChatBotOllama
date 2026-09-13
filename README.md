@@ -1,3 +1,5 @@
+<img width="1053" height="911" alt="image" src="https://github.com/user-attachments/assets/b0a12268-380c-4fe2-824b-a98030e38a51" />
+
 # AI Chatbot - .NET, React & Ollama
 
 A local AI chatbot application built using:
@@ -53,4 +55,3 @@ npm --version
 git --version
 ollama --version
 
-<img width="1053" height="911" alt="image" src="https://github.com/user-attachments/assets/7652de4c-0d5f-41e5-b860-7bd9d088530a" />
